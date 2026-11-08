@@ -28,14 +28,7 @@
         "enabled": true
       }
     },
-  {
-  "$schema": "./node_modules/wrangler/config-schema.json",
-  "name": "web-search-worker",
-  "main": "src/index.ts",
-  "upload_source_maps": true,
-  // Set this to today's date
-  "compatibility_date": "2026-11-07",
-  "ai": {
+    "ai": {
     "binding": "AI"
   }
 }
