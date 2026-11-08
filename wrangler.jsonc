@@ -34,5 +34,6 @@
     "browser": {
     "binding": "Browser Run"
     },
+}
 	"upload_source_maps": true
 }
