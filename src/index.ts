@@ -17,22 +17,6 @@ const MODEL_ID = "@cf/meta/llama-3.1-8b-instruct-fp8";
 const SYSTEM_PROMPT =
 	"You are a helpful, friendly assistant. Provide concise and accurate responses.";
 export default {
-	async fetch(request, env): Promise<Response> {
-		const response = await env.AI.websearch({
-			gatewayId: "default",
-			query:
-				"What are some fun things to do in Salt Lake City as fall approaches?",
-			provider: "exa",
-			limit: 5,
-		});
-
-		const results = await response.json();
-		return Response.json(results);
-	},
-} satisfies ExportedHandler<Env>;
-
-
-export default {
 	/**
 	 * Main request handler for the Worker
 	 */
