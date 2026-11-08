@@ -75,11 +75,11 @@ async function handleChatRequest(
 
 		const stream = await env.AI.run<typeof MODEL_ID>(MODEL_ID, inputs, {
 			// Uncomment to use AI Gateway
-			// gateway: {
-			//   id: "YOUR_GATEWAY_ID", // Replace with your AI Gateway ID
-			//   skipCache: false,      // Set to true to bypass cache
-			//   cacheTtl: 3600,        // Cache time-to-live in seconds
-			// },
+			   gateway: {
+			   id: "globade-ai-gateway", // Replace with your AI Gateway ID
+			   skipCache: false,      // Set to true to bypass cache
+			   cacheTtl: 3600,        // Cache time-to-live in seconds
+			 },
 		});
 
 		return new Response(stream, {
